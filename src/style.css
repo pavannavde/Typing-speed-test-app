@@ -66,11 +66,9 @@
     display: flex;
     justify-content: space-between;
     width:80vw;
-    /* align-items: last baseline; */
     color:black;
-    position:fixed;
-    bottom: 10px;
-    margin-inline: 120px;
+    margin-inline: auto;
+    margin-top: 30px;
 }
 .socialSites{
     align-self: flex-end;

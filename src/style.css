@@ -10,8 +10,11 @@
 .Header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 50px;
+    width:80vw;
+    margin-inline: auto;
+    
 }
 .logo{
     display: flex;
@@ -30,39 +33,92 @@
     height:50px;  
 }
 .TypingBox{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content:center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-inline: auto;
-    width:60vw;
-    height:300px;
+    width:80vw;
 }
-.TypingBox>input{
-    width:100%;
-    height: 300px;
-    text-align: start;
-    outline: none;
-    border: 1px solid grey;
-
-}
-.TypingBox>input::placeholder{
-    width:100%;
-    width:300px;
-    text-align: start;
+.row{
+    display: flex;
+    justify-content: space-between;
     font-size: 18px;
+}
+.row>div>button{
+    border: none;
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.row>div>button:hover{
+    color:rgb(36, 219, 36);
+}
+.paraText{
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.paraText>span{
+    color:rgb(153, 153, 153);
 }
 .Footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width:80vw;
+    /* align-items: last baseline; */
     color:black;
     position:fixed;
     bottom: 10px;
-    width:100vw;
+    margin-inline: 120px;
 }
-.socialSites>img{
+.socialSites{
+    align-self: flex-end;
+}
+.socialSites>a>img{
+    width:30px;
+    height:30px;
+    margin-right:10px;
+    /* background-color:blue; */
+    
+
+}
+.Footer>select{
+    background-color: aliceblue;
+    color:black;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    align-self: flex-end;
+}
+.ButtonsDiv{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.ButtonsDiv>img{
+    width:60px;
+    height: 60px;
+}
+.ButtonsDiv>div{
+    display:flex;
+    margin-top: 10px;
+}
+.ButtonsDiv>div>p{
+    font-size: 18px;
+}
+.ButtonsDiv>div>button{
+    background-color: #fff;
+    color: black;
     width:40px;
-    height:40px;
-    margin:10px;
-    background-color:blue;
+    border:none;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.ButtonsDiv>div>button:hover{
+     background-color: aquamarine;
 }

@@ -1,8 +1,9 @@
 import React from "react";
-import insta from "../images/instagram.svg"
-import linkedin from "../images/linkedin.svg"
-import email from "../images/envelope-circle-check-solid.svg"
-import github from "../images/github .svg"
+import insta from "../images/instagram.png"
+import linkedin from "../images/linkedin.png"
+import email from "../images/envelope.png"
+import github from "../images/github.png"
+import reset from "../images/reset.png"
 
 
  const Footer = () => {
@@ -11,14 +12,32 @@ import github from "../images/github .svg"
 
        <div className="Footer">
         <div className="socialSites">
-         <img src={github} alt="img"/>
-         <img src={linkedin} alt="img"/>
-         <img src={email} alt="img"/>
-         <img src={insta} alt="img"/>
+         <a href="#"><img src={github} alt="img"/></a>
+         <a href="#"><img src={linkedin} alt="img"/></a>
+         <a href="#"><img src={email} alt="img"/></a>
+         <a href="#"><img src={insta} alt="img"/></a>
+        </div>
+        <div className="ButtonsDiv">
+         <img src={reset} alt="reset"/>
+         <div>
+            <button>esc</button>
+            <p> - reset</p>
+         </div>
+         <div>
+             <button>10</button>
+             <button>50</button>
+             <button>100</button>
+             <p> - no.of words</p>
+         </div>
         </div>
         <select>
-            <option>Dark-Black</option>
-            <option>Dark-grey</option>
+            <option>Darken-black</option>
+            <option>Colored-Grey</option>
+            <option>Colored-Pink</option>
+            <option>Colored-Green</option>
+            <option>Colored-Blue</option>
+            <option>Colored-LightPurpule</option>
+            <option>Lighten-white</option>
         </select>
        </div>
     )

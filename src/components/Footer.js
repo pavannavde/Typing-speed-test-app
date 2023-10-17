@@ -12,10 +12,10 @@ import reset from "../images/reset.png"
 
        <div className="Footer">
         <div className="socialSites">
-         <a href="#"><img src={github} alt="img"/></a>
-         <a href="#"><img src={linkedin} alt="img"/></a>
-         <a href="#"><img src={email} alt="img"/></a>
-         <a href="#"><img src={insta} alt="img"/></a>
+         <a href="https://github.com/pavannavde"><img src={github} alt="img"/></a>
+         <a href="https://www.linkedin.com/in/pavan-navde-pn1997/"><img src={linkedin} alt="img"/></a>
+         <a href="mailto:pavannavde97@gmail.com"><img src={email} alt="img"/></a>
+         <a  href="https://www.linkedin.com/in/pavan-navde-pn1997/"><img src={insta} alt="img"/></a>
         </div>
         <div className="ButtonsDiv">
          <img src={reset} alt="reset"/>

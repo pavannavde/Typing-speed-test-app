@@ -6,7 +6,36 @@ import github from "../images/github.png"
 import reset from "../images/reset.png"
 
 
- const Footer = () => {
+ const Footer = ({setBgcolor}) => {
+    function setBackgroundColor(e){
+      // alert("hey")
+      let color = e.target.value
+      if(color==='Darken-black')
+      {
+         setBgcolor('black')
+      }
+      if(color==='Colored-Grey')
+      {
+         setBgcolor('rgb(206, 195, 195)')
+      }if(color==='Colored-Pink')
+      {
+         setBgcolor('rgb(233, 195, 202)')
+      }if(color==='Colored-Green')
+      {
+         setBgcolor('rgb(102, 224, 102)')
+      }if(color==='Colored-Blue')
+      {
+         setBgcolor('rgb(111, 111, 243)')
+      }if(color==='Colored-LightPurpule')
+      {
+         setBgcolor('rgb(243, 151, 243')
+      }
+      if(color==='Lighten-white')
+      {
+         setBgcolor('#fff')
+      }
+       
+    }
 
     return (
 
@@ -30,7 +59,7 @@ import reset from "../images/reset.png"
              <p> - no.of words</p>
          </div>
         </div>
-        <select>
+        <select onChange={setBackgroundColor}>
             <option>Darken-black</option>
             <option>Colored-Grey</option>
             <option>Colored-Pink</option>

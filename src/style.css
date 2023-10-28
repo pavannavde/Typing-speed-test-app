@@ -4,14 +4,14 @@
 *{
     margin:0;
     padding: 0;
-    background-color: black;
-    color:white;
+    /* background-color:rgb(111, 111, 243); */
+    color:rgb(145, 137, 137);
 }
 .Header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    padding-top: 50px;
     width:80vw;
     margin-inline: auto;
     
@@ -49,10 +49,11 @@
     border: none;
     margin-left: 10px;
     font-size: 18px;
+    background-color: transparent;
     cursor: pointer;
 }
 .row>div>button:hover{
-    color:rgb(36, 219, 36);
+    color:rgb(185, 236, 230);
 }
 .paraText{
     margin-top: 20px;
@@ -60,7 +61,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .paraText>span{
-    color:rgb(153, 153, 153);
+    color:rgb(105, 102, 102);
 }
 .Footer{
     display: flex;
@@ -69,6 +70,7 @@
     color:black;
     margin-inline: auto;
     margin-top: 30px;
+    padding-bottom: 100px;
 }
 .socialSites{
     align-self: flex-end;
@@ -82,12 +84,15 @@
 
 }
 .Footer>select{
-    background-color: aliceblue;
     color:black;
     height: 30px;
     border: none;
     font-size: 18px;
     align-self: flex-end;
+}
+.Footer>select>option{
+    background-color: black;
+
 }
 .ButtonsDiv{
 
